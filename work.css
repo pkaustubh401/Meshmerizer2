@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(images/background.jpg);
+  background-size: cover;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 10vh;
+}
+
+.navbar span a {
+  font-family: "Bebas Neue", cursive;
+  color: #fefefe;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  transition: color 0.5s ease;
+  text-decoration: none;
+}
+
+.nav_item3 {
+  color: #fc5557 !important;
+}
+
+.navbar span a:hover {
+  color: #fc5557;
+}
+
+/*projects*/
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.preview {
+  width: 100%;
+  margin: auto;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.preview img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+.preview img:hover {
+  opacity: 1;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem 0;
+  font-family: "Roboto", sans-serif;
+  color: #fefefe;
+}
+
+.title {
+  color: #1498a4;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.title a {
+  color: #1498a4;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.title a:hover {
+  font-size: 2.1rem;
+}
+
+.footer {
+  font-family: "Roboto", sans-serif;
+  color: #fefefe;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0 0 40px 0;
+}
+
+.footer:hover {
+  color: #1498a4;
+}
+
+@media screen and (min-width: 450px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  body {
+    font-size: 24px;
+  }
+
+  .project {
+    flex-direction: row;
+  }
+
+  .info {
+    padding: 0 0 0 1.5rem;
+    align-items: flex-start;
+    width: 65%;
+  }
+
+  .preview {
+    width: 35%;
+  }
+}

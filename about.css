@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(images/background.jpg);
+  background-size: cover;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 10vh;
+}
+
+.navbar span a {
+  font-family: "Bebas Neue", cursive;
+  color: #fefefe;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  transition: color 0.5s ease;
+  text-decoration: none;
+}
+
+.nav_item2 {
+  color: #fc5557 !important;
+}
+
+.navbar span a:hover {
+  color: #fc5557;
+}
+
+/*About me section*/
+.about_me_section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 90vh;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0px 20px 10px;
+}
+
+.post h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: #fefefe;
+}
+
+.name h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #fefefe;
+}
+
+.igname {
+  display: flex;
+}
+
+.aka {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  color: #fefefe;
+}
+
+.igname_brand {
+  font-family: "Bebas Neue", cursive;
+  color: #fc5557;
+  padding: 0 0 0 10px;
+}
+
+.proverb {
+  padding: 20px 0px 20px 10px;
+}
+
+.proverb p {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+  color: #fefefe;
+}
+
+.creativity {
+  font-weight: 400;
+}
+
+.c1 {
+  color: #a700e1;
+}
+.c2 {
+  color: #e10000;
+}
+.c3 {
+  color: #3ae056;
+}
+.c4 {
+  color: #20b2d6;
+}
+.c5 {
+  color: #fc9090;
+}
+.c6 {
+  color: #eeff00;
+}
+.c7 {
+  color: #48f830;
+}
+.c8 {
+  color: #d3d3d3;
+}
+.c9 {
+  color: #42fc13;
+}
+.c10 {
+  color: #ffc400;
+}
+
+.photo {
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+  height: 60%;
+}
+
+.photo img {
+  height: 100%;
+  width: auto;
+}
+
+/*skills section*/
+.skills,
+.contact {
+  font-family: "Roboto", sans-serif;
+  padding: 10px 20px;
+  color: #fefefe;
+}
+
+.headContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #191919;
+  border: 1px solid #fefefe;
+  border-radius: 5px;
+}
+
+.download_link {
+  text-decoration: none;
+  color: #fefefe;
+}
+
+.download p {
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+}
+
+.download_icon {
+  border-left: 1px solid;
+  padding: 5px 10px;
+}
+
+.download_icon svg {
+  width: 1.5rem;
+  height: 1.2rem;
+  transform: rotate(90deg);
+}
+
+.skill_buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.expertise,
+.intermediate,
+.learning {
+  padding: 20px 0px;
+}
+
+.skills h5 {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.skill_button {
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.red {
+  background-color: #fc5557;
+}
+
+.blue {
+  background-color: #1498a4;
+}
+
+.green {
+  background-color: #14a45f;
+}
+
+/*Icons*/
+.contact {
+  margin-top: 2.5rem;
+}
+
+.contact h1 {
+  margin-bottom: 1rem;
+}
+
+.icons_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 40px;
+  fill: #676767;
+  transition: fill 0.5s ease;
+}
+
+.icons_container svg:hover {
+  fill: #1498a4;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    font-size: 32px;
+  }
+}
