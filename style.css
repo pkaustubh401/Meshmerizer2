@@ -20,16 +20,16 @@ body {
   padding: 1rem;
 }
 
-.navbar span a {
+.navbar a {
   font-family: "Bebas Neue", cursive;
   color: #fefefe;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   letter-spacing: 0.1rem;
   transition: color 0.5s ease;
   text-decoration: none;
 }
 
-.navbar span a:hover {
+.navbar a:hover {
   color: #fc5557;
 }
 
@@ -44,6 +44,11 @@ body {
   right: 48px;
   bottom: -99px;
   z-index: -10;
+  -youbkit-touch-callout: none; /* iOS Safari */
+  -youbkit-user-select: none; /* Chrome 6.0+, Safari 3.1+, Edge & Opera 15+ */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE 10+ and Edge */
+  user-select: none;
 }
 
 .small_light_text {
@@ -59,6 +64,11 @@ body {
   letter-spacing: 0.2em;
   transform: rotate(90deg);
   z-index: -10;
+  -youbkit-touch-callout: none; /* iOS Safari */
+  -youbkit-user-select: none; /* Chrome 6.0+, Safari 3.1+, Edge & Opera 15+ */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE 10+ and Edge */
+  user-select: none;
 }
 
 /*hero text*/
@@ -78,11 +88,37 @@ body {
   color: #fefefe;
 }
 
-.hero-text span {
-  animation: color-change 3s ease infinite;
+/* .role {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: regular;
+  z-index: 10;
+  color: #fc5557;
+} */
+
+.cta {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  z-index: 10;
+  padding: 0.7rem 2rem;
+  border: 1px solid #1498a4;
+  border-radius: 3em;
+  background-image: linear-gradient(45deg, #1498a4, 50%, #272727 50%);
+  background-position: 100%;
+  background-size: 400%;
+  color: #fefefe;
+  transition: all 800ms ease-in-out;
 }
 
-@keyframes color-change {
+.cta:hover,
+.cta:focus {
+  background-position: 0;
+  color: #272727;
+}
+
+/* @keyframes color-change {
   0% {
     color: #fc5557;
   }
@@ -92,7 +128,7 @@ body {
   100% {
     color: #fc5557;
   }
-}
+} */
 
 /*Icons*/
 .icons_container {
@@ -174,6 +210,18 @@ body {
   }
 }
 
+@media screen and (max-width: 850px) {
+  .hero-text {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 4.2rem;
+  }
+
+  .role {
+    font-size: 2rem;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .red_ring {
     width: 161px;
@@ -187,6 +235,10 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+  .nav_item1 {
+    display: none;
+  }
+
   .red_ring {
     opacity: 50%;
   }
@@ -209,6 +261,13 @@ body {
     line-height: 4.2rem;
   }
 
+  .role {
+    font-size: 1rem;
+    font-weight: bold;
+    width: 70%;
+    height: 20%;
+  }
+
   .icons_container {
     position: fixed;
     bottom: 0;
@@ -222,9 +281,13 @@ body {
   }
 
   .hero-text-container {
-    position: static;
-    width: 100%;
-    padding-left: 10%;
-    padding-top: 30%;
+    left: 10%;
+    top: 20%;
+  }
+
+  .cta {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.6rem 1.2rem;
   }
 }
